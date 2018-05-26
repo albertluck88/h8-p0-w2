@@ -38,11 +38,11 @@ Start Pseudocode
 
 STORE "tahun" to any number;
 IF "tahun" mod 4 === 0 && "tahun" mod 100 !== 0
-    Display "ini tahun kabisat"
+    DISPLAY "ini tahun kabisat"
 ELSE IF "tahun" mod 4 && "tahun" mod 100 === 0 && "tahun" mod 400
-    Display "ini tahun kabisat"
+    DISPLAY "ini tahun kabisat"
 Else
-    Display " ini bukan tahun kabisat"
+    DISPLAY " ini bukan tahun kabisat"
 
 ENDIF
 
@@ -90,10 +90,10 @@ Start Pseudocode
 STORE "kuku" WITH any value
 FOR STORE "jumlahMurid" WITH 0; "jumlahMurid" LESS 40; "jumlahMurid" equals "jumlahMurid" plus 1
   IF "kuku" equals "pendek"
-    Display "Guru akan memuji siswa"
+    DISPLAY "Guru akan memuji siswa"
   IF ELSE "kuku" equals "panjang"
-    Display "Guru akan menghukum siswa"
+    DISPLAY "Guru akan menghukum siswa"
   Else
-    Display "Kuku belum diperiksa"
+    DISPLAY "Kuku belum diperiksa"
 
 END Pseudocode
