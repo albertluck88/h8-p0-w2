@@ -38,11 +38,11 @@ Start Pseudocode
 
 STORE "tahun" to any number;
 IF "tahun" mod 4 === 0 && "tahun" mod 100 !== 0
-Do Display "ini tahun kabisat"
-ELSEIF "tahun" mod 4 && "tahun" mod 100 === 0 && "tahun" mod 400
-Do Display "ini tahun kabisat"
+    Display "ini tahun kabisat"
+ELSE IF "tahun" mod 4 && "tahun" mod 100 === 0 && "tahun" mod 400
+    Display "ini tahun kabisat"
 Else
-Do Display " ini bukan tahun kabisat"
+    Display " ini bukan tahun kabisat"
 
 ENDIF
 
@@ -70,7 +70,7 @@ FOR STORE "jumlahCuci" WITH 0; "jumlahCuci" < 20; "jumlahCuci" equals "jumlahCuc
   ELSE IF "jumlahCuci" equals 20
     DISPLAY "Mesin Cuci Siap dijalankan"
   ElSE
-    DISPLAU "BELUM DIMASUKAN SAMA SEKALi"
+    DISPLAY "BELUM DIMASUKAN SAMA SEKALi"
 
 
 end Pseudocode

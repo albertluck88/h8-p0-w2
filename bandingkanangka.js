@@ -1,11 +1,11 @@
 
 function bandingkanAngka(angka1, angka2) {
   if(angka1 < angka2){
-    return("true")
+    return true
   }else if(angka1 > angka2){
-    return("false")
+    return false
   }else if(angka1 == angka2){
-    return ("-1")
+    return -1
   }else{
     return("tidak ada yang sesuai")
   }
