@@ -37,9 +37,9 @@ END Algoritma
 Start Pseudocode
 
 STORE "tahun" to any number;
-IF "tahun" mod 4 === 0 && "tahun" mod 100 !== 0
+IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals 0
     DISPLAY "ini tahun kabisat"
-ELSE IF "tahun" mod 4 && "tahun" mod 100 === 0 && "tahun" mod 400
+ELSE IF "tahun" mod 4 AND "tahun" mod 100 equals 0 AND "tahun" mod 400
     DISPLAY "ini tahun kabisat"
 Else
     DISPLAY " ini bukan tahun kabisat"
