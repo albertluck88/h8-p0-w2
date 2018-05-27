@@ -37,11 +37,11 @@ END Algoritma
 Start Pseudocode
 
 STORE "tahun" to any number;
-IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals 0
+IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals 0 THEN
     DISPLAY "ini tahun kabisat"
-ELSE IF "tahun" mod 4 AND "tahun" mod 100 equals 0 AND "tahun" mod 400
+ELSE IF "tahun" mod 4 AND "tahun" mod 100 equals 0 AND "tahun" mod 400 THEN
     DISPLAY "ini tahun kabisat"
-Else
+Else THEN
     DISPLAY " ini bukan tahun kabisat"
 
 ENDIF
@@ -67,9 +67,9 @@ Start Pseudocode
 FOR STORE "jumlahCuci" WITH 0; "jumlahCuci" < 20; "jumlahCuci" equals "jumlahCuci" plus 1
   IF "jumlahCuci" LESS 20
     DISPLAY "Masukan Lagi pakaiannya ke dalam mesin cuci"
-  ELSE IF "jumlahCuci" equals 20
+  ELSE IF "jumlahCuci" equals 20 THEN
     DISPLAY "Mesin Cuci Siap dijalankan"
-  ElSE
+  ElSE THEN
     DISPLAY "BELUM DIMASUKAN SAMA SEKALi"
 
 
@@ -89,11 +89,11 @@ Start Pseudocode
 
 STORE "kuku" WITH any value
 FOR STORE "jumlahMurid" WITH 0; "jumlahMurid" LESS 40; "jumlahMurid" equals "jumlahMurid" plus 1
-  IF "kuku" equals "pendek"
+  IF "kuku" equals "pendek" THEN
     DISPLAY "Guru akan memuji siswa"
-  IF ELSE "kuku" equals "panjang"
+  IF ELSE "kuku" equals "panjang" THEN
     DISPLAY "Guru akan menghukum siswa"
-  Else
+  ElSE THEN
     DISPLAY "Kuku belum diperiksa"
 
 END Pseudocode
