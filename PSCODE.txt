@@ -11,8 +11,8 @@ End Algoritma
 
 Start Pseudocode
 
-STORE "M" WITH 600
-STORE "A" WITH 2
+STORE "M" WITH value 600
+STORE "A" WITH value 2
 STORE "ΣF" without any value
 CALCULATE "M" TIMES "A"
 SET "ΣF" VALUE WITH CALCULATION RESULT;
@@ -25,7 +25,7 @@ END Pseudocode
 
 Start Algoritma
 1. Tetapkan nilai Tahun = "" ;
-2. Periksa nilai Tahun Kabisat dengan kondisi Jika Tahun habis dibagi 4 dan tidak habis dibagi 100 dan Jika Tahun habis
+2. Periksa nilai Tahun dengan kondisi Jika Tahun habis dibagi 4 dan tidak habis dibagi 100 dan Jika Tahun habis
    dibagi 4 habis di bagi 100 dan habis dibagi 400;
   2a. Jika Nilai Tahun kabisat maka akan muncul "BENAR INI TAHUN KABISAT";
   2b. Jika Nilai Tahun Bukan Kabisat maka akan muncul "INI BUKAN TAHUN KABISAT";
@@ -36,13 +36,13 @@ END Algoritma
 
 Start Pseudocode
 
-STORE "tahun" to any number;
-IF "tahun" mod 4 equals 0 AND "tahun" mod 100 not equals 0 THEN
-    DISPLAY "ini tahun kabisat"
-ELSE IF "tahun" mod 4 AND "tahun" mod 100 equals 0 AND "tahun" mod 400 THEN
-    DISPLAY "ini tahun kabisat"
-Else THEN
-    DISPLAY " ini bukan tahun kabisat"
+STORE "Tahun" to any number;
+IF "tahun" MOD 4 === 0 AND "tahun" MOD 100 !=== 0
+  Do Display "ini tahun kabisat"
+ELSEIF "tahun" MOD 4 AND "tahun" MOD 100 === 0 AND "tahun" MOD 400 === 0
+  Do Display "ini tahun kabisat"
+Else
+  Do Display " ini bukan tahun kabisat"
 
 ENDIF
 
@@ -55,7 +55,7 @@ Start Algoritma
 
 1. Mesin cuci di set dengan angka 0;
 2. Setiap kali Foxie memasukan pakaian kedalam mesin cuci, maka nilai mesin cuci akan bertambah +1;
-3. kondisi ini akan mengecek apakah jumlah pakai di mesin cuci sudah 20 jika belum akan terus berulang sampai jumlah pakaian di mesin cuci berjumlah 20;
+3. kondisi ini akan terus berulang sampai jumlah pakaian di mesin cuci berjumlah 20;
 4. setelah berjumlah 20 mesin cuci bekerja;
 
 End Algoritma
@@ -64,14 +64,15 @@ End Algoritma
 
 Start Pseudocode
 
-FOR STORE "jumlahCuci" WITH 0; "jumlahCuci" < 20; "jumlahCuci" equals "jumlahCuci" plus 1
-  IF "jumlahCuci" LESS 20
-    DISPLAY "Masukan Lagi pakaiannya ke dalam mesin cuci"
-  ELSE IF "jumlahCuci" equals 20 THEN
-    DISPLAY "Mesin Cuci Siap dijalankan"
-  ElSE THEN
-    DISPLAY "BELUM DIMASUKAN SAMA SEKALi"
+STARTWHILE
 
+STORE "Mesin Cuci" WITH 0
+WHILE "Mesin Cuci" <20
+ADD   "Mesi Cuci" by 1
+
+DISPLAY "Pakaian yang masuk ke mesin cuci berjumlah 20";
+
+ENDWHILE
 
 end Pseudocode
 
@@ -79,7 +80,6 @@ end Pseudocode
 Start Algoritma
 
 1. Jumlah Siswa di set 0;
-2. Guru akan periksa kuku siswa jika panjang guru akan menghukum, jika pendek guru akan memuji
 2. Setiap kali guru selesai periksa siswa maka jumlah siswa akan bertambah +1;
 3. akan terus berulang sampai jumlah siswa berjumlah 40 orang;
 
@@ -87,13 +87,14 @@ End Algoritma
 
 Start Pseudocode
 
-STORE "kuku" WITH any value
-FOR STORE "jumlahMurid" WITH 0; "jumlahMurid" LESS 40; "jumlahMurid" equals "jumlahMurid" plus 1
-  IF "kuku" equals "pendek" THEN
-    DISPLAY "Guru akan memuji siswa"
-  IF ELSE "kuku" equals "panjang" THEN
-    DISPLAY "Guru akan menghukum siswa"
-  ElSE THEN
-    DISPLAY "Kuku belum diperiksa"
+STORE "jumlahmurid" to 1
+WHILE "jumlahmurid" < 40
+DISPLAY "jumlahmurid"
+CALCULATE "jumlahmurid" mod 2
+STORE "pengingat" TO THE RESULT CALCULATION
+IF "pengingat" equals to 0
+DISPLAY "Guru Memuji Siswa "
+ELSE
+DISPLAY "Guru Menghukum Siswa"
 
 END Pseudocode
